@@ -1,5 +1,5 @@
 ## Introduction 
-官方的StableDiffusion3.5模型部署，本项目实现了并发推理。
+官方的StableDiffusion3.5模型部署不支持并发（Scheduler并发调度会卡死，默认使用的FlowMatchEulerDiscreteScheduler线程不安全），本项目实现了并发推理。
 
 ## Quick Start
 在执行代码前，你需要先下载[StableDiffusion3.5](https://huggingface.co/stabilityai/stable-diffusion-3.5-medium)模型，并放置在`./models`目录下（提前创建好）。
