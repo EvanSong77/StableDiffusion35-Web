@@ -1,0 +1,29 @@
+sd35:
+  # 文生图
+  text-to-image:
+    path: /data/dev/model-checkpoint/stable-diffusion-3.5-medium
+    name: sd35-medium
+    num_inference_steps: 32
+    guidance_scale: 4.5
+    max_sequence_length: 512
+    save_path: generate_pics
+    negative_prompt_path: src/config/negative_prompt
+    positive_prompt_path: src/config/positive_prompt
+
+prompt_style:
+  ink:
+    name: ink
+    width: 1280
+    height: 960
+  natural:
+    name: natural
+    width: 1024
+    height: 1024
+  vivid:
+    name: vivid
+    width: 1024
+    height: 1024
+  cyberpunk:
+    name: cyberpunk
+    width: 2048
+    height: 2048
